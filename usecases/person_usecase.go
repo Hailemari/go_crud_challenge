@@ -27,7 +27,7 @@ func (uc *personUseCase) CreatePerson(ctx context.Context, person domain.Person)
 	// Generate a new UUID for the person
 	person.ID = uuid.NewString()
 
-	// Simulate storing the person in an in-memory database (e.g., a slice or map)
+	// Simulate storing the person in an in-memory database
 	// Assume uc.repo is the repository that handles storage
 	createdPerson, err := uc.repo.CreatePerson(ctx, person)
 	if err != nil {

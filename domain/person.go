@@ -9,7 +9,7 @@ import (
 type Person struct {
 	ID      string   `json:"id"`
 	Name    string   `json:"name" binding:"required"`
-	Age     int      `json:"age" binding:"required,min=0"` // Added min validation
+	Age     int      `json:"age" binding:"required,min=0"`
 	Hobbies []string `json:"hobbies" binding:"required"`
 }
 
