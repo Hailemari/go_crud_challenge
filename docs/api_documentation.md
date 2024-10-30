@@ -1,4 +1,4 @@
-Here’s a detailed API documentation for the **Go CRUD Challenge** project. This file describes the endpoints, request/response formats, and error handling.
+Here's the complete API documentation for your **Go CRUD Challenge** project, now including the link to the published Postman documentation at the end:
 
 ---
 
@@ -202,3 +202,13 @@ All endpoints start with the base URL:
 - **Internal Server Errors**: Any unexpected server errors will respond with a `500 Internal Server Error` status and a message indicating the server error.
 
 - **Cross-Origin Resource Sharing (CORS)**: CORS is enabled for this API to allow frontend applications on different domains to access it. This is configured to allow all origins (`*`) and methods (GET, POST, PUT, DELETE, OPTIONS).
+
+---
+
+## Additional Documentation
+
+For more detailed API usage, sample requests, and responses, please refer to the published API documentation on Postman:
+
+[**Postman Documentation**](https://documenter.getpostman.com/view/22137934/2sAY4vg2xN)
+
+This published documentation provides interactive examples, making it easier to understand and test each endpoint directly in Postman.

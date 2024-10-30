@@ -85,7 +85,7 @@ func (h *PersonHandler) UpdatePerson(c *gin.Context) {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
-	// ID should be preserved in updatedPerson for the update operation
+	// ID must be preserved in updatedPerson for the update operation
 	updatedPerson.ID = id
 
 	person, err := h.useCase.UpdatePerson(c, id, updatedPerson)
@@ -102,5 +102,5 @@ func (h *PersonHandler) DeletePerson(c *gin.Context) {
 		c.JSON(http.StatusNotFound, gin.H{"error": "Person not found"})
 		return
 	}
-	c.JSON(http.StatusNoContent, nil)
+	c.JSON(http.StatusOK, gin.H{"message": "Person deleted successfully"})
 }
